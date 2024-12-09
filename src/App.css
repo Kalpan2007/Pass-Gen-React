@@ -1,0 +1,128 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.password-generator {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  padding: 30px;
+}
+
+.password-generator h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #237628;
+}
+
+.password-display {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.password-display input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #66bb6a;
+  border-radius: 8px;
+  background-color: #f1f8e9;
+  color: #1b5e20;
+  font-size: 1rem;
+}
+
+.password-display input::placeholder {
+  color: #66bb6a;
+}
+
+.password-display button {
+  background-color: #2e7d32;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(46, 125, 50, 0.3);
+}
+
+.password-display button:hover {
+  background-color: #1b5e20;
+  box-shadow: 0 6px 15px rgba(46, 125, 50, 0.5);
+}
+
+.password-length {
+  margin-bottom: 20px;
+}
+
+.password-length label {
+  font-size: 1rem;
+  color: #388e3c;
+}
+
+.password-length input[type="range"] {
+  width: 100%;
+  margin-top: 10px;
+  -webkit-appearance: none;
+  background: #a5d6a7;
+  height: 6px;
+  border-radius: 5px;
+}
+
+.password-length input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #2e7d32;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.password-options {
+  text-align: left;
+}
+
+.password-options label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.password-options input[type="checkbox"] {
+  margin-right: 10px;
+  accent-color: #2e7d32;
+}
+
+@media (max-width: 600px) {
+  .password-generator {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .password-generator h1 {
+    font-size: 1.5rem;
+  }
+
+  .password-display button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .password-length input[type="range"]::-webkit-slider-thumb {
+    width: 14px;
+    height: 14px;
+  }
+}
